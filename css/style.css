@@ -1105,11 +1105,62 @@ box-shadow: inset 0px -101px 93px -23px rgba(255,255,255,0.9);
 	border: 0 !important;
 }
 
+/*START*/
+.enter-profile {
+	width: 112px;
+    height: 42px;
+    border: 1px solid #2a3748;
+    background: transparent;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+    outline: none;
+    margin: 7px 0 0 0;
+}
 
+.start {
+	padding: 0;
+}
 
+.start-main-top {
+	background: url(../images/start-top-bg.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 7% 0 7% 7%;
+}
 
+.start-main-top span {
+	color: #827eb8;
+}
 
+.start-main-top span i {
+	padding: 0 10px 0 0;
+}
 
+.start-main-top p {
+	font-size: 14px;
+	color: #252e45;
+}
+
+.start-main-top ul li {
+	font-size: 14px;
+	color: #252e45;
+}
+
+.start-main-top button {
+	max-width: 312px;
+	width: 100%;
+	height: 59px;
+	background: url(../images/ask-big-button.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border: 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #fff;
+	outline: none;
+
+}
 
 
 
