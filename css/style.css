@@ -574,7 +574,7 @@ box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.2);
 	padding: 0;
 }
 
-#cours h4 {
+#cours h4 a {
 	font-size: 17px;
 	color: #252e45;
 	font-weight: 600;
@@ -584,7 +584,7 @@ box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.2);
 	cursor: pointer;
 }
 
-#cours h4:hover {
+#cours h4:hover a {
 	color: #8783bf;
 } 
 
@@ -1218,7 +1218,7 @@ box-shadow: inset 0px -101px 93px -23px rgba(255,255,255,0.9);
 	.second-click {
 		margin: 0 0 0 5px;
 	}
-		main {
+		main.pers-area {
 		padding: 30px 3% 0;
 	}
 }
