@@ -510,11 +510,13 @@ main.pers-area {
 box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.2);
 }
 
-.inner-material h3 {
+.inner-material h3 a {
+	font-size: 17px;
 	color: #252e45;
 	font-weight: 600;
 	padding: 20px 0 10px 25px;
 	text-decoration: underline;
+	display: block;
 }
 
 .inner-material a {
