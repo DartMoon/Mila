@@ -44,9 +44,9 @@ $(document).ready(function(){
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        arrows: false,
-        // nextArrow: ('.next-arrow-ask'),
-        // prevArrow: ('.prev-arrow-ask'),
+        arrows: true,
+        nextArrow: ('.next-arrow-ask'),
+        prevArrow: ('.prev-arrow-ask'),
         responsive: [{
             breakpoint: 1050,
                 settings: {
