@@ -71,6 +71,23 @@ $(document).ready(function(){
         ]
     });
 
+    $('.first-tabs-top-slider').slick({
+        infinite: true,
+        slidesToShow:3,
+        slidesToScroll: 1,
+        arrows: true,
+        nextArrow: ('.next-arrow2'),
+        prevArrow: ('.prev-arrow2'),
+        responsive: [{
+            breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     var first = $('.first-click');
     var second = $('.second-click');
 
