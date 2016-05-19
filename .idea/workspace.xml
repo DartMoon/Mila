@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9b90cd3-5851-4c57-94c4-36d37df246c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-item.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.html" afterPath="$PROJECT_DIR$/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask-question.html" afterPath="$PROJECT_DIR$/ask-question.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article-item.html" afterPath="$PROJECT_DIR$/article-item.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-dist.css" afterPath="$PROJECT_DIR$/css/style-dist.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event.html" afterPath="$PROJECT_DIR$/event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home-work.html" afterPath="$PROJECT_DIR$/home-work.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/otzivy.html" afterPath="$PROJECT_DIR$/otzivy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prepros.cfg" afterPath="$PROJECT_DIR$/prepros.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start-page.html" afterPath="$PROJECT_DIR$/start-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talks.html" afterPath="$PROJECT_DIR$/talks.html" />
     </list>
     <ignored path="Mila.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,54 +26,40 @@
     <favorites_list name="Mila" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44994733">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="article-item.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/article-item.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="161" column="80" selection-start-line="161" selection-start-column="80" selection-end-line="161" selection-end-column="80" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.5908347">
-          <split-first>
-            <leaf>
-              <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/js/main.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="208">
-                      <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/css/style.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="79">
-                      <caret line="2425" column="21" selection-start-line="2425" selection-start-column="21" selection-end-line="2425" selection-end-column="21" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="article-item.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/article-item.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="166" column="35" selection-start-line="166" selection-start-column="35" selection-end-line="166" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="3101" column="0" selection-start-line="3101" selection-start-column="0" selection-end-line="3101" selection-end-column="0" />
+              <folding>
+                <marker date="1463687790625" expanded="true" signature="38641:38768" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ask-question.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ask-question.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="276" column="16" selection-start-line="276" selection-start-column="16" selection-end-line="310" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,9 +90,9 @@
         <option value="$PROJECT_DIR$/otzivy.html" />
         <option value="$PROJECT_DIR$/start-page.html" />
         <option value="$PROJECT_DIR$/talks.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/article-item.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -177,7 +155,38 @@
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -212,13 +221,7 @@
       <recent name="D:\Work\Mila" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.video.html">
-    <configuration default="false" name="start-page.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Mila/start-page.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="talks.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Mila/talks.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.ask-question.html">
     <configuration default="false" name="video.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Mila/video.html">
       <method />
     </configuration>
@@ -226,6 +229,12 @@
       <method />
     </configuration>
     <configuration default="false" name="article-item.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Mila/article-item.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="otzivy.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Mila/otzivy.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="ask-question.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Mila/ask-question.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -276,19 +285,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.start-page.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.talks.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.article.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.article-item.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.article.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.article-item.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.otzivy.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ask-question.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.article-item.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.article.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.talks.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.start-page.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ask-question.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.otzivy.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.article-item.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.article.html" />
       </list>
     </recent_temporary>
   </component>
@@ -313,25 +322,25 @@
       <workItem from="1463396326130" duration="9583000" />
       <workItem from="1463475095880" duration="20127000" />
       <workItem from="1463561386134" duration="14769000" />
-      <workItem from="1463647893693" duration="25428000" />
+      <workItem from="1463647893693" duration="29004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80976000" />
+    <option name="totallyTimeSpent" value="84552000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12118019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12053572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20746888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15550596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18983403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18821605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39834026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -400,7 +409,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45456">
           <caret line="2841" column="28" selection-start-line="2841" selection-start-column="28" selection-end-line="2841" selection-end-column="28" />
-          <folding />
+          <folding>
+            <marker date="1463687790625" expanded="true" signature="38641:38768" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -462,7 +473,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1463687790625" expanded="true" signature="38641:38768" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -485,7 +498,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1463687790625" expanded="true" signature="38641:38768" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -630,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ask-question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="158" column="22" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home-work.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
@@ -662,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/otzivy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1163">
-          <caret line="498" column="24" selection-start-line="498" selection-start-column="24" selection-end-line="498" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/video.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -686,27 +685,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article-item.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="161" column="80" selection-start-line="161" selection-start-column="80" selection-end-line="161" selection-end-column="80" />
+        <state relative-caret-position="197">
+          <caret line="115" column="39" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/otzivy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
+        <state relative-caret-position="1991">
+          <caret line="498" column="24" selection-start-line="498" selection-start-column="24" selection-end-line="498" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask-question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="276" column="16" selection-start-line="276" selection-start-column="16" selection-end-line="310" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="166" column="35" selection-start-line="166" selection-start-column="35" selection-end-line="166" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="2425" column="21" selection-start-line="2425" selection-start-column="21" selection-end-line="2425" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="112">
+          <caret line="3101" column="0" selection-start-line="3101" selection-start-column="0" selection-end-line="3101" selection-end-column="0" />
+          <folding>
+            <marker date="1463687790625" expanded="true" signature="38641:38768" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
