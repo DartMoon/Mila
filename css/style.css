@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
 @font-face {
 	font-family: 'FontAwesome';
 	src: url('../fonts/fontawesome-webfont.eot?v=4.6.1');
@@ -13,6 +15,15 @@ body {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+
+.bg-text {
+	font-family: 'Comfortaa', cursive;
+	color: #584ca5;
+	-webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(transparent, transparent), url(../images/bg-text.png) repeat;
+	-webkit-background-clip: text;
+}
+
 
 
 .purple-button {
@@ -696,12 +707,15 @@ main.pers-area {
 }
 
 /*TALKS*/
-.talks-main h1 {
-	max-width: 640px;
-	margin: 10px auto;
+.talks-main .bg-text {
+	font-size: 40px;
+	margin: 10px 0 10px 12%;
+	line-height: 50px;
 }
 
-.talks-main h2 {
+.right-side .bg-text {
+	font-size: 28px;
+	padding: 0;
 	margin: 10px 0;
 }
 
@@ -1017,8 +1031,10 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	display: block;
 }
 
-.top-hm  img:last-of-type {
-	margin: 0 0 15px;
+.top-hm .bg-text {
+	margin: 20px 0 15px;
+	font-size: 40px;
+	line-height: 50px;
 }
 
 .middle-hm {
@@ -1028,7 +1044,7 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 }
 .middle-hm.not-check {
 	border-bottom: 2px solid #ff2928;
-	display: none;                
+	/*display: none;                */
 }
 
 
@@ -1381,9 +1397,10 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 }
 
 
-.start-main-top img {
+.start-main-top .bg-text {
 	padding: 22px 0 40px;
 	display: block;
+	font-size: 60px;
 }
 
 .start-main-top p {
@@ -1436,6 +1453,11 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 .start-main-bottom {
 	padding: 0 6% 60px;
 }
+.start-main-bottom .bg-text {
+	font-size: 40px;
+	padding: 20px 0 20px 15px;
+}
+
 
 .side-start-block {
 	padding: 0 20px;
@@ -1446,19 +1468,18 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	z-index: 20;
 }
 
-.side-start-block:first-of-type > img {
+.side-start-block h5.bg-text {
+	font-size: 21px;
+	font-weight: 600;
 	padding: 20px 0;
-	margin: 40px auto 0;
-	display: block;
-	max-width: 283px;
-	width: 100%;
+	margin: 20px 0;
 }
 
 .side-start-block:first-of-type:before {
 	content: url(../images/flower-start.png);
 	position: absolute;
 	z-index: -10;
-	    top: -60px;
+	top: -60px;
     left: 20px;
 }
 
@@ -1497,8 +1518,8 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	width: 100%;
 }
 
-.side-start-block:nth-child(2) > img,
-.side-start-block:last-of-type > img{
+.side-start-block:nth-child(2) > h5,
+.side-start-block:last-of-type > h5 {
 	border-bottom: 2px solid #8783bf;
 	padding-bottom: 25px;
 	margin: 50px 0 10px;
@@ -1570,16 +1591,15 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	padding: 4% 4%;
 }
 
-.event-wrapp > img {
+.event-wrapp > .bg-text {
 	margin: 40px 0 40px 0;
-	max-width: 455px;
-	width: 100%;
+	font-size: 40px;
 
 }
 
 .event-wrapp > img:first-of-type {
 	margin: 20px 0 40px 0;
-
+	font-size: 28px;
 }
 
 .event-block {
@@ -1604,9 +1624,9 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 .event-block .media .media-object {
 	max-width: 292px;
 }
- h4 img {
-	max-width: 418px;
-	width: 100%;
+
+.event-block .bg-text {
+	font-size: 48px;
 }
 
 .event-block .media p {
@@ -1677,8 +1697,10 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
     padding: 40px 7%;
 }
 
-.ask-main > img {
+.ask-main .bg-text {
     float: left;
+	font-size: 40px;
+	line-height: 50px;
 }
 
 .ask-main .but-ask {
@@ -1989,6 +2011,10 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	padding-right: 130px;
 }
 
+.left-colum > .bg-text {
+	font-size: 40px;
+}
+
 .my-right-top-style {
 	padding: 0px 40px 60px 30px;
 }
@@ -2022,9 +2048,9 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	color: white;
 }
 
-.top-side-block-otzivy>img.first-otziv-img {
-	max-width: 269px;
-	width: 100%;
+.top-side-block-otzivy > .bg-text {
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .top-side-block-otzivy>p {
@@ -2317,6 +2343,99 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 }
 
 
+.top-nav-article {
+	background: #8783bf;
+	color: #fff;
+	padding: 7px 0;
+}
+
+.top-nav-article span {
+	font-size: 15px;
+}
+.to-left-art {
+	float: left;
+	margin-left: 6%;
+}
+
+
+.to-right-art {
+	float: right;
+	margin-right: 6%;
+}
+
+.open-block-art {
+	width: 42px;
+	height: 42px;
+	background: transparent;
+	border: 1px solid #9390c6;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	outline: none;
+	float: left;
+	margin-right: 15px;
+	position: relative;
+}
+
+.open-block-art img {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.prev-art,
+.next-nav{
+	
+	border: 1px solid #9390c6;
+	background: transparent;
+	font-weight: 600;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	font-size: 12px;
+	padding: 15px 10px;
+	outline: none;
+}
+
+.prev-art i,
+.next-nav i {
+	font-size:10px;
+	font-weight: 300;
+	padding: 0 10px;
+}
+
+.top-nav-article button {
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s ;
+	-o-transition: all .5s ;
+	transition: all .5s ;
+}
+
+.top-nav-article button:hover {
+	border-color: #9e9acb;
+}
+
+.open-block-article {
+	background: #fff;
+	max-width: 680px;
+	width: 100%;
+	display: none;
+}
+
+.open-block-article .category-art {
+	float: none;
+	max-width: 640px;
+	max-height: 207px;
+}
+
+.dop-click {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: none;
+	left: 0;
+}
+
 
 
 
@@ -2456,9 +2575,10 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 		margin: 0 auto;
 	}
 
-	.talks-main h1,
-	.talks-main h2{
+	.talks-main .bg-text{
 		text-align: center;
+		padding: 0;
+		margin: 10px 0;
 	}
 
 	.side-start-block:last-of-type > div {
@@ -2720,7 +2840,9 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	    display: none;
 	}
 
-	.ask-main > img {
+	.ask-main > .bg-text {
+		font-size: 26px;
+		text-align: center;
 		float: none;
 	}
 
@@ -2769,6 +2891,30 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	.article-wrap h3 a {
 		font-size: 16px;
 	}
+
+
+	.event-wrapp>.bg-text {
+		font-size: 22px;
+	}
+
+	.event-block .bg-text {
+		font-size: 28px;
+	}
+
+	.start-main-top .bg-text {
+		font-size: 28px;
+	}
+
+	.start-main-bottom .bg-text {
+		font-size: 24px;
+		padding: 20px 0 20px 15px;
+	}
+
+	.top-hm .bg-text {
+		font-size: 28px;
+	}
+
+
 
 
 }
