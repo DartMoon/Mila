@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9b90cd3-5851-4c57-94c4-36d37df246c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-dist.css" afterPath="$PROJECT_DIR$/css/style-dist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prepros.cfg" afterPath="$PROJECT_DIR$/prepros.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qwestions.html" afterPath="$PROJECT_DIR$/qwestions.html" />
     </list>
     <ignored path="Mila.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
@@ -48,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qwestions.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qwestions.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qwestions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="208" column="35" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="35" />
+            <state relative-caret-position="608">
+              <caret line="204" column="14" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -102,8 +100,8 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/article-item.html" />
         <option value="$PROJECT_DIR$/kalag.html" />
-        <option value="$PROJECT_DIR$/qwestions.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/qwestions.html" />
       </list>
     </option>
   </component>
@@ -336,15 +334,15 @@
       <workItem from="1463647893693" duration="29144000" />
       <workItem from="1464895268882" duration="5361000" />
       <workItem from="1464949279654" duration="1653000" />
-      <workItem from="1465215903062" duration="3681000" />
+      <workItem from="1465215903062" duration="4065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95387000" />
+    <option name="totallyTimeSpent" value="95771000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-607" width="1936" height="1096" extended-state="0" />
+    <frame x="-1928" y="-607" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13382508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -728,14 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qwestions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="208" column="35" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -743,6 +733,14 @@
           <folding>
             <marker date="1465220178835" expanded="true" signature="38641:38768" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qwestions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="204" column="14" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
