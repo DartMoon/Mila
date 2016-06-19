@@ -334,23 +334,121 @@
                 <span><strike>1500 р.</strike></span>
                 <span>1000 р.</span>
                 <p class="first-p">Вы выпускница второго курса</p>
-                <button class="purple-button low-button-bg">БЕРУ</button>
+                <button class="purple-button low-button-bg" data-toggle="modal" data-target=".bt-example-modal-lg">БЕРУ</button>
             </div>
         </div>
+        <!-- Large modal -->
+
+
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div>
                 <span><strike>2000 р.</strike></span>
                 <span>1500 р.</span>
                 <p class="sec-p">Вы не участница курса, подписчица/подруга/просто хотите придти/ выпускница первого курса</p>
-                <button class="purple-button low-button-bg">БЕРУ</button>
+                <button class="purple-button low-button-bg" data-toggle="modal" data-target=".bt-example-modal-lg">БЕРУ</button>
+
+
             </div>
         </div>
         <div>
+
             <p>Цена действительна до 28.06</p>
 
             <p>С 29.06 по 9.07 стоимость билетов увеличится</p>
 
             <p>С 9.07 по 10.07 стоимость входного билета - 2 000 рублей (для всех категорий)</p>
+        </div>
+    </div>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="registation">
+                    <h1>РЕГИСТРАЦИЯ НА ВЫПУСКНОЙ-ДЕВИЧНИК
+                        <br>В МОСКВЕ 10.07</h1>
+                    <form action="">
+                        <label for="name">Ваше ФИО</label>
+                        <input type="text" id="name">
+                        <div class="clearfix"></div>
+                        <label for="namber">Номер телефона</label>
+                        <input type="text" id="namber">
+                        <div class="clearfix"></div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                        <div class="clearfix"></div>
+                        <label>Вы участница майского курса?</label>
+                        <div class="fl-radio">
+                            <input class="radioc" type="radio" checked="checked" name="dva"/>Да
+                            <label for=""></label>
+                            <input class="radioc" type="radio" name="dva"/>Нет
+                            <label for=""></label>
+                        </div>
+                        <div class="clearfix"></div>
+                        <label>Вы придете с ребенком?</label>
+                        <div class="fl-radio">
+
+                            <input class="radioc" type="radio" checked="checked" name="dva"/>Да
+                            <label for=""></label>
+                            <input class="radioc" type="radio" name="dva"/>Нет
+                            <label for=""></label>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <label for="age">Сколько ему лет?</label>
+                        <input type="text" id="age">
+                        <div class="clearfix"></div>
+                        <label for="inst">Ваш ник в Insta</label>
+                        <input type="text" id="inst">
+                        <div class="clearfix"></div>
+                        <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bt-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="registation">
+                    <h1>РЕГИСТРАЦИЯ НА ВЫПУСКНОЙ-ДЕВИЧНИК
+                        <br>В МОСКВЕ 10.07</h1>
+                    <form action="">
+                        <label for="name">Ваше ФИО</label>
+                        <input type="text" id="name">
+                        <div class="clearfix"></div>
+                        <label for="namber">Номер телефона</label>
+                        <input type="text" id="namber">
+                        <div class="clearfix"></div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                        <div class="clearfix"></div>
+                        <label>Вы участница майского курса?</label>
+                        <div class="fl-radio">
+                            <input class="radioc" type="radio" checked="checked" name="dva"/>Да
+                            <label for=""></label>
+                            <input class="radioc" type="radio" name="dva"/>Нет
+                            <label for=""></label>
+                        </div>
+                        <div class="clearfix"></div>
+                        <label>Вы придете с ребенком?</label>
+                        <div class="fl-radio">
+
+                            <input class="radioc" type="radio" checked="checked" name="dva"/>Да
+                            <label for=""></label>
+                            <input class="radioc" type="radio" name="dva"/>Нет
+                            <label for=""></label>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <label for="age">Сколько ему лет?</label>
+                        <input type="text" id="age">
+                        <div class="clearfix"></div>
+                        <label for="inst">Ваш ник в Insta</label>
+                        <input type="text" id="inst">
+                        <div class="clearfix"></div>
+                        <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <div class="free">
@@ -361,6 +459,7 @@
         <img src="images/orange-line.png" alt="">
     </div>
     <div class="clearfix"></div>
+
 </main>
 <footer>
     <div class="wrapper">
