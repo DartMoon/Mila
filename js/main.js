@@ -113,13 +113,23 @@ $(document).ready(function(){
         prevArrow: ('.prev-arrow2'),
         responsive: [{
             breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
+        }
         ]
     });
+    $('.reviews-slider').slick({
+        infinite: true,
+        slidesToShow:1,
+        slidesToScroll: 1,
+        arrows: true
+        // nextArrow: ('.next-arrow2'),
+        // prevArrow: ('.prev-arrow2'),
+    });
+
+
 
     var first = $('.first-click');
     var second = $('.second-click');

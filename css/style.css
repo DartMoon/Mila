@@ -3163,6 +3163,189 @@ body.devichnik {
 
 
 
+
+
+
+
+
+/*MARAFON*/
+.bg-text_page {
+	font-size: 38px;
+	text-align: center;
+}
+
+.group-img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.mila-logo-marafon {
+	max-width: 195px;
+	width: 100%;
+	display: block;
+	margin: 0 auto 20px;
+}
+
+.bg-text__titel {
+	font-size: 40px;
+	text-align: center;
+}
+
+.bg-text__text {
+	font-size: 19px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.about-marafon {
+	background: url("../images/bg-maraf.png") no-repeat center / cover;
+	padding: 60px;
+	max-width: 1090px;
+	width: 100%;
+	margin: 45px auto 0;
+}
+
+.about-marafon p {
+	font-size: 15px;
+	line-height: 24px;
+	font-style: italic;
+	color: #252e45;
+}
+
+
+.statistica {
+	background: url('../images/bg-stat.png') no-repeat center / cover;
+	color: #fff;
+	padding: 60px;
+	margin: 50px 0 50px;
+}
+
+
+.statistica h1 {
+	font-family: 'Comfortaa', cursive;
+	font-size: 47px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.about-stat {
+	font-size: 20px;
+	line-height: 27px;
+	background: #484562;
+	padding: 10px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 35px;
+}
+
+.statistica h4 {
+	font-size: 14px;
+}
+
+.statistica h4 + p {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+
+.statistica .media {
+	margin: 0 0 40px;
+}
+
+.place {
+	background: url('../images/bg-place.png') no-repeat top / cover;
+	padding: 60px;
+}
+
+.place img {
+	display: block;
+	margin: 20px auto;
+}
+
+.place p {
+	font-size: 13px;
+	line-height: 24px;
+	color: #252e45;
+	text-align: center;
+}
+
+
+
+.reviews-slider {
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+.reviews-slider .slick-next:before,
+.reviews-slider .slick-prev:before {
+	content: none ;
+}
+
+.reviews-slider .slick-prev  {
+	background: url('../images/review-btn.png');
+	width: 36px;
+	height: 36px;
+	left: -70px;
+}
+
+.reviews-slider .slick-next {
+	background: url('../images/review-btn-l.png');
+	width: 36px;
+	height: 36px;
+	right: -70px;
+	left: auto;
+}
+
+.reviews-slider  img {
+	display: block;
+	width: 100%;
+}
+
+
+.company-reviews h1 {
+	font-size: 47px;
+	text-align: center;
+	padding-bottom: 50px;
+	color: #b46a76 !important;
+}
+
+.sponsors {
+	max-width: 660px;
+	width: 100%;
+	margin: 50px auto;
+	padding: 20px 20px 40px;
+	background: #fff;
+}
+
+.sponsors h1 {
+	font-size: 33px;
+	padding-bottom: 34px;
+	text-align: center;
+}
+
+.sponsors p {
+	text-align: center;
+	font-size: 17px;
+	line-height: 27px;
+	color: #252e45;
+}
+
+.sponsors a {
+	display: block;
+	text-align: center;
+	font-size: 17px;
+	line-height: 27px;
+	color: #3778d1;
+}
+/*MARAFON END*/
+
+
+
+
+
 @media (max-width: 1315px) {
 	form.navbar-form input {
 		margin: 18px 0;
@@ -3231,7 +3414,10 @@ body.devichnik {
 		top: 0 !important;
 	}
 
-
+	.reviews-slider .slick-prev,
+	.reviews-slider .slick-next {
+		display: none !important;
+	}
 }
 
 @media (max-width: 993px) {
@@ -3685,6 +3871,28 @@ body.devichnik {
 		font-size: 14px;
 	}
 
+
+	.bg-text_page,
+	.bg-text__titel,
+	.statistica h1,
+	.company-reviews h1,
+	.sponsors h1 {
+		font-size: 18px;
+	}
+
+	..bg-text__text,
+	.about-marafon p{
+		font-size: 16px;
+	}
+
+	.about-marafon,
+	.statistica {
+		padding: 15px;
+	}
+
+	.about-stat {
+		font-size: 11px;
+	}
 
 
 }
