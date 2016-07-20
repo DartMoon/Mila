@@ -4118,7 +4118,9 @@ body.devichnik {
 	text-decoration: none;
 }
 
-
+.new-theme {
+	margin: 30px 0 30px 12% !important;
+}
 
 
 	/*MAIN-PAGE*/
