@@ -1607,11 +1607,18 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	padding: 0 20px;
 }
 
+
+
 .side-start-block:first-of-type {
 	position: relative;
 	z-index: 20;
 	margin-top: 130px;
 	max-width: 305px;
+}
+
+.side-start-block--big {
+	max-width: 100% !important;
+	width: 100%;
 }
 
 .side-start-block h5.bg-text {
@@ -1627,6 +1634,10 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	z-index: -10;
 	top: -60px;
     left: 0;
+}
+
+.side-start-block--big:first-of-type:before {
+	left: 10px;
 }
 
 .side-start-block:first-of-type p {
@@ -4014,6 +4025,11 @@ body.devichnik {
 .time > div p {
 	font-size: 16px;
 	color: #523d47;
+}
+
+
+.otzivy-style > h5.bg-text {
+	font-size: 40px;
 }
 
 
