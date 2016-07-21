@@ -904,7 +904,7 @@ main.pers-area {
 
 .talks-right-top {
 	background: #fff;
-	max-width: 305px;
+	/*max-width: 305px;*/
 	width: 100%;
 	border-top: 2px solid #8783bf;
 	padding: 20px;
@@ -1012,6 +1012,8 @@ main.pers-area {
 .ask-but {
 	margin: 32px 0 0;
 	display: block;
+	max-width: 100%;
+	width: 100%;
 }
 
 
@@ -1702,7 +1704,7 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	position: relative;
 	z-index: 20;
 	margin-top: 130px;
-	max-width: 305px;
+	/*max-width: 305px;*/
 }
 
 .side-start-block--big {
@@ -1722,7 +1724,7 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	position: absolute;
 	z-index: -10;
 	top: -60px;
-    left: 0;
+    left: 10px;
 }
 
 .side-start-block--big:before {
@@ -1769,7 +1771,7 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 .side-start-block:last-of-type > h5 {
 	border-bottom: 2px solid #8783bf;
 	padding-bottom: 25px;
-	margin: 50px 0 10px;
+	margin: 30px 0 0;
 }
 
 .side-start-block:nth-child(2) > div {
@@ -2710,22 +2712,22 @@ box-shadow: inset 0 -101px 93px -23px rgba(255,255,255,0.9);
 	padding-top: 40px;
 }
 
-/*.left-article > a {*/
-	/*font-size: 13px;*/
-	/*color: #8783bf;*/
-	/*text-decoration: underline;*/
-	/*line-height: 30px;*/
-/*}*/
-
-/*.left-article > a:hover {*/
-	/*text-decoration: none;*/
-/*}*/
-
-.left-article > span {
+.left-article > a {
 	font-size: 13px;
 	color: #8783bf;
+	text-decoration: underline;
 	line-height: 30px;
 }
+
+.left-article > a:hover {
+	text-decoration: none;
+}
+
+/*.left-article > span {*/
+	/*font-size: 13px;*/
+	/*color: #8783bf;*/
+	/*line-height: 30px;*/
+/*}*/
 
 .about-art-item p,
 .about-art-item ul {
@@ -4842,6 +4844,7 @@ body.devichnik {
 	.ask-but {
 		display: block;
 		margin: 0 auto;
+
 	}
 
 	.talks-main .bg-text{
