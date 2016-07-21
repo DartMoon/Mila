@@ -3616,7 +3616,7 @@ body.devichnik {
 	position: fixed;
 	top: 0;
 	opacity: 0;
-	z-index: 9999999999;
+	z-index: 999;
 }
 
 .offer-cours__text {
@@ -3945,6 +3945,10 @@ body.devichnik {
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 	outline: none;
+}
+
+.modal-about-course {
+	z-index: 999999;
 }
 
 .modal-about-course .modal-content {
