@@ -18,9 +18,9 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: url(../images/background.png) no-repeat;
-	-webkit-background-size: contain;
-	background-size: contain;
+	background: url(../images/background.png) no-repeat center / cover;
+	/*-webkit-background-size: contain;*/
+	/*background-size: contain;*/
 }
 
 .bg-text {
@@ -31,6 +31,12 @@ body {
 	-webkit-background-clip: text;
 }
 
+
+h2 {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 10px 0;
+}
 
 
 .purple-button {
@@ -3606,6 +3612,11 @@ body.devichnik {
 	background-size: cover;
 	vertical-align: middle;
 	padding: 0 5% 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	opacity: 0;
+	z-index: 9999999999;
 }
 
 .offer-cours__text {
@@ -3921,7 +3932,7 @@ body.devichnik {
 	line-height: 20px;
 }
 
-.how-it button {
+.how-it > div >  button {
 	display: block;
 	margin: 30px auto;
 	max-width: 270px;
@@ -3933,6 +3944,26 @@ body.devichnik {
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
+	outline: none;
+}
+
+.modal-about-course .modal-content {
+	background: url(../images/background.png) no-repeat center / cover;
+	padding: 20px;
+}
+
+.modal-about-course .close {
+	outline: none;
+	color: #fff;
+	opacity: .6;
+}
+
+.modal-about-course h1 {
+	text-align: left;
+}
+
+.modal-about-course p {
+	text-align: left;
 }
 
 
@@ -4223,7 +4254,7 @@ body.devichnik {
 .main-jamb {
 	content: "";
 	background: url("../images/main-jamb.png") no-repeat center / cover;
-	padding: 80px 0 80px 120px;
+	padding: 80px 0 80px 50px;
 	margin-bottom: 36px;
 }
 
@@ -4252,6 +4283,7 @@ body.devichnik {
 	height: 42px;
 	font-size: 13px;
 	margin: 5px;
+	padding: 0 20px;
 }
 
 .main-jamb button:hover {

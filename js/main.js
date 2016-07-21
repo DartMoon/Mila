@@ -174,5 +174,15 @@ $(document).ready(function(){
     });
 });
 
+$(function () {
+    var element = $(".offer-cours"), display;
+    $(window).scroll(function () {
+        display = $(this).scrollTop() >= 200;
+        display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 500);
+    });
+});
+
+
+
 
     
