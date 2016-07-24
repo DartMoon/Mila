@@ -4769,6 +4769,182 @@ body.devichnik {
 
 
 
+/*PERSONAL-AREA*/
+
+/*.pers-page {*/
+	/*background: #f2faff url(../images/bg-pers-area.png) no-repeat center / cover ;*/
+	/*padding: 30px 12% 0;*/
+/*}*/
+
+.personal-page {
+	margin-top: 40px;
+}
+.personal-page h1.bg-text {
+	font-size: 21px;
+	text-align: left;
+	border-bottom: 2px solid #8783bf;
+	padding: 0;
+	padding-bottom: 15px;
+}
+
+.wards-outer {
+	border: 1px solid #ebebeb;
+	background: #fff;
+}
+.wards-outer .media {
+	margin: 0;
+}
+
+
+.wards-inner {
+	border-bottom: 1px solid #ebebeb;
+	padding: 15px;
+}
+
+.wards-inner:last-child {
+	border-bottom: 0;
+}
+
+.wards-inner img {
+	margin: 0 !important;
+}
+
+
+.wards-inner .media-top {
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.wards-inner h4 {
+	font-size: 15px;
+	line-height: 20px;
+	color: #252e45;
+}
+
+.wards-inner span {
+	font-size: 12px;
+	line-height: 20px;
+	color: #b7babf;
+	padding-right: 10px;
+}
+
+.wards-inner a {
+	font-size: 12px;
+	line-height: 20px;
+	color: #8783bf;
+	text-decoration: underline;
+}
+
+
+.flower-circ {
+	content: '';
+	background: url(../images/flower-circle.png) no-repeat center / contain;
+	padding: 36px 40px;
+	margin: 20px 0;
+}
+
+
+.flower-circ span {
+	display: block;
+	text-align: center;
+	font-size: 50px;
+	color: #393d62;
+	font-weight: 300;
+}
+
+.flower-circ p {
+	text-align: center;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 300;
+	color: #393d62;
+}
+
+.about-hw {
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+
+.check-img {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	vertical-align: middle;
+}
+
+.check-img img {
+	margin: 0 !important;
+	display: inline-block !important;
+}
+
+.about-hw {
+	padding: 15px;
+}
+
+
+.about-hw h1{
+	text-align: left;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	color: #252e45;
+	padding: 0 10px;
+}
+
+.about-hw h1 span {
+	font-size: 12px;
+	color: #8d929e;
+}
+
+.about-hw .check {
+	font-weight: 600;
+	font-size: 13px;
+	color: #55dcaa;
+	display: inline-block;
+	float: right;
+	margin: 6px 0 0 0;
+}
+
+.about-hw .check i {
+	padding: 0 5px;
+}
+
+.about-hw hr {
+	margin: 10px 0;
+}
+
+.about-hw h3 {
+	font-size: 14px;
+	color: #5b5b5b;
+}
+
+.about-hw h3 span {
+	font-weight: 700;
+	color: #8783bf;
+}
+
+.un-check {
+	background: #f7fcff;
+}
+
+.un-check .check {
+	color: #ff2928;
+}
+
+.check-marg {
+	margin-top: 25px;
+}
+.un-check-marg {
+	margin-top: 40px;
+}
 
 
 
