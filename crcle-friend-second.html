@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.custom-scrollbar.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style-dist.css">
 
@@ -278,31 +279,31 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active in fade" id="achiv">
-                <div class="personal-page">
+                <div class="personal-page circle-second">
                     <div class="col-lg-7 col-md-7 col-sm-12 ">
-                        <h1 class="bg-text">Участницы</h1>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                            <div class="flower-circ">
-                                <span>3</span>
-                                <p>Года
-                                    на сайте</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                            <div class="flower-circ">
-                                <span>24</span>
-                                <p>Задания проверено</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                            <div class="flower-circ">
-                                <span>32</span>
-                                <p>Курса
-                                    пройдено</p>
-                            </div>
-                        </div>
+                        <h2 class="bg-text">Круг подруг 69</h2>
+                        <button class="void">Проголосовать за скрытие круга</button>
                         <div class="clearfix"></div>
-                        <h1 class="bg-text">Домашние задания на проверке</h1>
+                        <hr>
+                        <span class="gray-text">Вы хотит скрыть этот круг подруг?</span>
+                        <form action="">
+                            <input id="yes" type="radio" name="selection"><label for="yes">Да</label>
+                            <input id="no" type="radio" name="selection"><label for="no">Нет</label>
+                        </form>
+                        <span class="gray-text">Результаты голосования</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                60% - За
+                            </div>
+                        </div>
+                        <div class="progress progress-marg ">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                40% - Против
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <h1 class="bg-text">Домашние задания</h1>
                         <div class="about-hw check-marg">
                             <div class="check-img">
                                 <img src="images/check-img.png" alt="">
@@ -365,7 +366,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12">
-                        <h1 class="bg-text">Подопечные</h1>
+                        <h1 class="bg-text">Участницы</h1>
                         <div class="wards-outer">
                             <div class="media wards-inner">
                                 <div class="media-left media-top">
@@ -373,7 +374,9 @@
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">Евгения Жестяк</h4>
-                                    <span>Возраст: 33 года</span><span>Город: Санкт-Петербург</span>
+                                    <span>23 – 24 марта, 12:00</span>
+                                    <button class="send-rew">Оставить отзыв</button>
+                                    <div class="clearfix"></div>
                                     <a href="#">Отправить телефон</a>
                                 </div>
                             </div>
@@ -383,7 +386,8 @@
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">Евгения Жестяк</h4>
-                                    <span>Возраст: 33 года</span><span>Город: Санкт-Петербург</span>
+                                    <span>23 – 24 марта, 12:00</span> <button class="send-rew">Оставить отзыв</button>
+                                    <div class="clearfix"></div>
                                     <a href="#">Отправить телефон</a>
                                 </div>
                             </div>
@@ -393,7 +397,8 @@
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">Евгения Жестяк</h4>
-                                    <span>Возраст: 33 года</span><span>Город: Санкт-Петербург</span>
+                                    <span>23 – 24 марта, 12:00</span> <button class="send-rew">Оставить отзыв</button>
+                                    <div class="clearfix"></div>
                                     <a href="#">Отправить телефон</a>
                                 </div>
                             </div>
@@ -403,18 +408,105 @@
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">Евгения Жестяк</h4>
-                                    <span>Возраст: 33 года</span><span>Город: Санкт-Петербург</span>
+                                    <span>23 – 24 марта, 12:00</span>
+                                    <button class="send-rew">Оставить отзыв</button>
+                                    <div class="clearfix"></div>
                                     <a href="#">Отправить телефон</a>
                                 </div>
                             </div>
-                            <div class="media wards-inner">
-                                <div class="media-left media-top">
-                                    <img class="media-object" src="images/img-wards.png" alt="...">
+                        </div>
+                        <div class="video-comments circle-video">
+                            <img src="images/left-comments.png">
+                            <img src="images/comments.png" style="max-width: 151px; width: 100%">
+                            <form>
+                                <input type="text" placeholder="Оставьте свой комментарий..." required>
+                                <div class="clearfix"></div>
+                                <button>Отправить</button>
+                            </form>
+                            <div class="comments-block comments__block_skin">
+                                <div class="media">
+                                    <div class="media-left media-top">
+                                        <a href="#">
+                                            <img class="media-object" src="images/ava-talks.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Анна Гутарина</h4>
+                                        <p>Спасибо большое Петру Осипову, Михаилу Дашкиеву и всей команде </p>
+                                        <span>7 часов назад <a href="#">| Ответить</a></span>
+                                    </div>
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Евгения Жестяк</h4>
-                                    <span>Возраст: 33 года</span><span>Город: Санкт-Петербург</span>
-                                    <a href="#">Отправить телефон</a>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="images/ava-talks.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Анна Гутарина</h4>
+                                        <p>Спасибо большое Петру Осипову, Михаилу Дашкиеву и всей команде </p>
+                                        <span>7 часов назад <a href="#">| Ответить</a></span>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="images/ava-talks.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Анна Гутарина</h4>
+                                        <p>Спасибо большое Петру Осипову, Михаилу Дашкиеву и всей команде </p>
+                                        <span>7 часов назад <a href="#">| Ответить</a></span>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="images/ava-talks.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Анна Гутарина</h4>
+                                        <p>Спасибо большое Петру Осипову, Михаилу Дашкиеву и всей команде </p>
+                                        <span>7 часов назад <a href="#">| Ответить</a></span>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="images/ava-talks.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Анна Гутарина</h4>
+                                        <p>Спасибо большое Петру Осипову, Михаилу Дашкиеву и всей команде </p>
+                                        <span>7 часов назад <a href="#">| Ответить</a></span>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="images/ava-talks.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Анна Гутарина</h4>
+                                        <p>Спасибо большое Петру Осипову, Михаилу Дашкиеву и всей команде </p>
+                                        <span>7 часов назад <a href="#">| Ответить</a></span>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="images/ava-talks.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Анна Гутарина</h4>
+                                        <p>Спасибо большое Петру Осипову, Михаилу Дашкиеву и всей команде </p>
+                                        <span>7 часов назад <a href="#">| Ответить</a></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -529,6 +621,14 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.custom-scrollbar.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+    $(".comments-block").customScrollbar({
+        skin: "default-skin",
+        hScroll: false,
+        updateOnWindowResize: true
+    });
+</script>
 </body>
 </html>

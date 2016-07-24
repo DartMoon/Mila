@@ -4793,6 +4793,10 @@ body.devichnik {
 }
 .wards-outer .media {
 	margin: 0;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s ;
+	-o-transition: all .5s ;
+	transition: all .5s ;
 }
 
 
@@ -4946,7 +4950,106 @@ body.devichnik {
 	margin-top: 40px;
 }
 
+.progress {
+	height: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
 
+.progress-marg {
+	margin-bottom: 40px;
+}
+
+.progress-bar {
+	background: url("../images/progressbar.png") no-repeat top / cover;
+	line-height: 15px;
+}
+
+
+.circle-second h2.bg-text {
+	text-align: left;
+	font-size: 40px !important;
+	float: left;
+}
+
+.circle-second .void {
+	float: right;
+	background: transparent;
+	border: 1px solid #bebfe7;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	padding: 0 15px;
+	font-size: 13px;
+	color: #3c5881;
+	outline: none;
+	height: 50px;
+	font-weight: 600;
+}
+
+.gray-text {
+	font-size: 14px;
+	color: #737373;
+	display: block;
+	margin: 10px 0;
+}
+
+
+.circle-second label {
+	font-size: 12px;
+	color: #737373;
+	margin: 0 10px;
+}
+
+
+.send-rew {
+	font-size: 12px;
+	color: #8783bf;
+	background: transparent;
+	border: 1px solid #8783bf;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	float: right;
+	padding: 0 15px;
+	height: 30px;
+}
+
+.wards-outer .media:hover {
+	-webkit-box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.2);
+}
+
+
+.video-comments.circle-video {
+	border-left: 0;
+	box-shadow: none;
+}
+
+.circle-video img {
+	display: inline-block !important;
+	margin: 20px 0;
+}
+
+.video-comments.circle-video form {
+	max-width: 100%;
+}
+
+.video-comments.circle-video .media {
+	background: transparent;
+	padding-left: 0;
+}
+
+
+.video-comments.circle-video .media img {
+	margin: 0 !important;
+}
+
+.video-comments.circle-video .media p {
+	text-align: left  !important;
+	color: #000 !important;
+}
 
 
 
@@ -5293,8 +5396,8 @@ body.devichnik {
 
 @media (max-width: 767px) {
 	body {
-		-webkit-background-size: auto;
-		background-size: auto;
+		background-size: contain;
+		background-position: top;
 	}
 
 	main.pers-area {
@@ -5697,6 +5800,23 @@ body.devichnik {
 	.search-circle button {
 		height: 30px;
 	}
+
+	.circle-second h2.bg-text {
+		float: none;
+	}
+
+	.circle-second .void {
+		float: none;
+		display: block;
+		margin: 10px auto;
+	}
+
+	.send-rew {
+		float: none;
+		display: block;
+		margin: 10px 0;
+	}
+
 
 }
 
