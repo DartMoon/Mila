@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Partners</title>
+	<link href="css/libs.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevp27ArIqN5lIIpoah5c1n1nX7ZLBXIg"
+					type="text/javascript"></script>
+	<script type="text/javascript">
+		function initialize() {
+			//получаем наш div куда будем карту добавлять
+			var mapCanvas = document.getElementById('map_canvas');
+
+			// задаем параметры карты
+			var mapOptions = {
+				//Это центр куда спозиционируется наша карта при загрузке
+				center: new google.maps.LatLng(59.1094275, 40.4784029),
+				disableDefaultUI: true,
+
+				//увеличение под которым будет карта, от 0 до 18
+				// 0 - минимальное увеличение - карта мира
+				// 18 - максимально детальный масштаб
+				zoom: 4,
+				//Тип карты - обычная дорожная карта
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				styles: [
+					{
+						featureType: 'all',
+						stylers: [
+							{color: '#1b1919'}
+						]
+					},
+					{
+						featureType: 'administrative',
+						elementType: 'geometry.stroke',
+						stylers: [
+							{ color: '#2b2b2b'}
+						]
+					},
+					{
+						featureType: 'administrative.land_parcel',
+						elementType: 'geometry.stroke',
+						stylers: [
+							{ color: '#2b2b2b'}
+						]
+					},{
+						featureType: "water",
+						elementType: "geometry",
+						stylers: [
+							{color: '#2b2b2b'}
+						]
+					}
+				]
+			};
+			//Инициализируем карту
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+			//Иконка
+			var image = {
+				url: 'img/beachflag.png'
+			};
+			//Объявляем массив с нашими местами и маркерами
+			var markers = [],
+				myPlaces = [];
+			//Это класс для удобного манипулирования массивами
+			function Place(name,numberFirst,numberSecond,email, latitude, longitude, description){
+				this.name = name;  // название
+				this.numberFirst = numberFirst;
+				this.numberSecond = numberSecond;
+				this.email = email;
+				this.latitude = latitude;  // широта
+				this.longitude = longitude;  // долгота
+				this.description = description;  // описание места
+			}
+			//Добавляем места в массив
+			myPlaces.push(new Place('ул. Васи Алексеева, д. 6 литер А ','+7 (812) 643-21-51','+7 (812) 643-21-71','spb@svainova.ru', 59.8798837, 30.2635033));
+			myPlaces.push(new Place('г. Балашиха. микрорайон Купавна ул. Проектная 72 ','+7 (812) 643-21-51','+7 (812) 643-21-71','spb@svainova.ru', 55.7713131,37.8787168));
+			for (var i = 0, n = myPlaces.length; i < n; i++) {
+				var marker = new google.maps.Marker({
+					//расположение на карте
+					position: new google.maps.LatLng(myPlaces[i].latitude, myPlaces[i].longitude),
+					map: map,
+					icon: image,
+					//То что мы увидим при наведении мышкой на маркер
+					title: myPlaces[i].name
+				});
+
+				//Добавим попап, который будет появляться при клике на маркер
+				var infowindow = new google.maps.InfoWindow({
+					content:
+					'<div class="red-line">'+'</div>'+
+					'<ul>'+
+					'<li>'+ myPlaces[i].name + '</li>'+
+					'<li>'+ myPlaces[i].numberFirst + '</li>'+
+					'<li>'+ myPlaces[i].numberSecond +'</li>'+
+					'<li>'+ myPlaces[i].email +'</li>'+
+					'</ul>'
+				});
+				//привязываем попап к маркеру на карте
+				makeInfoWindowEvent(map, infowindow, marker);
+				markers.push(marker);
+			}
+		}
+		function makeInfoWindowEvent(map, infowindow, marker) {
+			//Привязываем событие КЛИК к маркеру
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+		//Когда документ загружен полностью - запускаем инициализацию карты.
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<header>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<!--FOR MOBILE NAVIGATION-->
+				<div class="visible-xs">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<img src="img/toogle-icon.png" alt="">
+						</button>
+						<div class="brand">
+							<a class="brand__link" href="#"><img src="img/logo.png" alt="Logo CVAINOVA"></a>
+						</div>
+						<button type="button" class="navbar-toggle navabr-toogle-second collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+							<img src="img/phone-icon.png" alt="">
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse visble-xs" id="bs-example-navbar-collapse-1">
+						<ul class="navbar-nav main-nav">
+							<li class="dropdown main-nav__item">
+								<a href="#" class="dropdown-toggle main-nav__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">наша продукция<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Separated link</a></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+							<li class="main-nav__item"><a href="#" class="main-nav__link">о компании</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__link">технологии</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__link">гарантии качества</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__link">партнёрам</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__link">контакты</a></li>
+							<li class="main-nav__item"><a href="#" class="main-nav__link">новости</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+					<div class="collapse navbar-collapse visble-xs" id="bs-example-navbar-collapse-2">
+						<ul class="contacts-info">
+							<li class="contacts-info__phone contacts-info__phone_icon">+7 812 643-21-71</li>
+							<li class="contacts-info__phone">8 800 500-11-32</li>
+							<li class="contacts-info__work">с 9:00 до 21:00 без выходных</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+				<!--FOR MOBILE NAVIGATION END-->
+				<!--FOR DESKTOP-->
+				<div class="hidden-xs">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="enter-location">
+							<span class="enter-location__text">Выберите город:</span>
+							<a class="enter-location__city enter-location__city_icon" href="#">г. Москва</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="brand">
+							<a class="brand__link" href="#"><img src="img/logo.png" alt="Logo CVAINOVA"></a>
+							<p class="brand__text">8 лет на рынке производства винтовых свай</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<ul class="contacts-info">
+							<li class="contacts-info__phone contacts-info__phone_icon">+7 812 643-21-71</li>
+							<li class="contacts-info__phone">8 800 500-11-32</li>
+							<li class="contacts-info__work">с 9:00 до 21:00 без выходных</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</div> <!-- /.container-fluid -->
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse hidden-xs desktop-nav">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<ul class="navbar-nav main-nav">
+						<li class="dropdown main-nav__item  main-nav__link_icon">
+							<a href="#" class="dropdown-toggle main-nav__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">наша продукция<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li ><a href="#">Action</a></li>
+								<li ><a href="#">Another action</a></li>
+								<li ><a href="#">Something else here</a></li>
+								<li ><a href="#">Separated link</a></li>
+								<li ><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">о компании</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">технологии</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">гарантии качества</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">партнёрам</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">контакты</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link_open">новости</a></li>
+					</ul>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.container-fluid -->
+	</div><!-- /.navbar-collapse -->
+	<!--FOR DESKTOP END-->
+</header>
+<main>
+
+	<div class="provider">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="about-provider">
+						<div>
+							<h1 class="about-provider__head">крупнейший поставщик винтовых свай </h1>
+							<p class="about-provider__text">по всей территории россии</p>
+							<hr>
+							<p class="about-provider__text">У нас всегда товар в наличии</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-items">
+		<div class="slider-items-left slider-items-left_main">
+			<div><img src="img/main-page-slider.png" alt=""></div>
+			<div><img src="img/main-page-slider.png" alt=""></div>
+		</div>
+		<div class="slider-items-right slider-items-right_main slider-items-right_about-machine">
+			<div>
+				<img src="img/red-line-icon.jpg" alt="">
+				<div class="slider-items-right_about-machine_pad">
+					<div class="clearfix"></div>
+					<h1 class="slider-items-right__head">У нас свое производство</h1>
+					<p class="slider-items-right__text">Мы не закупаем сваи у сторонних производителей, вся наша продукция выпускается на собственном заводе в Санкт- Петербурге под строгим контролем ОТК</p>
+					<a href="" class="btn-more transition">подробнее</a>
+				</div>
+			</div>
+			<div><img src="img/red-line-icon.jpg" alt="">
+				<div class="slider-items-right_about-machine_pad">
+					<div class="clearfix"></div>
+					<h1 class="slider-items-right__head">У нас свое производство</h1>
+					<p class="slider-items-right__text">Мы не закупаем сваи у сторонних производителей, вся наша продукция выпускается на собственном заводе в Санкт- Петербурге под строгим контролем ОТК</p>
+					<a href="" class="btn-more transition">подробнее</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="red-line"></div>
+	<div class="graphik-online">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<h1 class="graphik-online__head">География наших работ он-лайн	</h1>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="graphik-online_marg">
+							<img src="img/consultation-icon-gray.png" alt="">
+							<p>Монтируют <span>550</span> свай в день</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="graphik-online_marg">
+							<img src="img/consultation-icon-gray.png" alt="">
+							<p><span>36</span> бригад с Питере</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="graphik-online_marg">
+							<img src="img/consultation-icon-gray.png" alt="">
+							<p><span>43</span> бригады в Москве</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="map-outer hidden-xs">
+		<h1 class="map-outer__head">контакты наших партнёров</h1>
+		<div id="map_canvas"></div>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="map-container default-skin">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											питер
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<i class="fa fa-minus" aria-hidden="true"></i>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body">
+										<ul>
+											<li>ул. Васи Алексеева, д. 6 литер А </li>
+											<li>+7 (812) 643-21-51</li>
+											<li>+7 (812) 643-21-71</li>
+											<li>spb@svainova.ru</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											москва
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<i class="fa fa-minus" aria-hidden="true"></i>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body">
+										<ul>
+											<li>ул. Васи Алексеева, д. 6 литер А </li>
+											<li>+7 (812) 643-21-51</li>
+											<li>+7 (812) 643-21-71</li>
+											<li>spb@svainova.ru</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											Архангельск
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<i class="fa fa-minus" aria-hidden="true"></i>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body">
+										<ul>
+											<li>ул. Васи Алексеева, д. 6 литер А </li>
+											<li>+7 (812) 643-21-51</li>
+											<li>+7 (812) 643-21-71</li>
+											<li>spb@svainova.ru</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="map-outer__mobile">
+		<div class="container-fluid visible-xs">
+			<div class="container">
+				<div class="row">
+					<h1 class="map-outer__head">контакты партнёров</h1>
+					<div class="panel-group" id="accordionMobile" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne1">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordionMobile" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+										питер
+										<i class="fa fa-plus" aria-hidden="true"></i>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne1">
+								<div class="panel-body">
+									<ul>
+										<li>ул. Васи Алексеева, д. 6 литер А </li>
+										<li>+7 (812) 643-21-51</li>
+										<li>+7 (812) 643-21-71</li>
+										<li>spb@svainova.ru</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo1">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMobile" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
+										москва
+										<i class="fa fa-plus" aria-hidden="true"></i>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo1">
+								<div class="panel-body">
+									<ul>
+										<li>ул. Васи Алексеева, д. 6 литер А </li>
+										<li>+7 (812) 643-21-51</li>
+										<li>+7 (812) 643-21-71</li>
+										<li>spb@svainova.ru</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree1">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMobile" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree">
+										Архангельск
+										<i class="fa fa-plus" aria-hidden="true"></i>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree1">
+								<div class="panel-body">
+									<ul>
+										<li>ул. Васи Алексеева, д. 6 литер А </li>
+										<li>+7 (812) 643-21-51</li>
+										<li>+7 (812) 643-21-71</li>
+										<li>spb@svainova.ru</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="why">
+		<h1 class="why__head">пОЧЕМУ МЫ ПОСТРОИЛИ БИЗНЕС В КРИЗИСНЫЙ ПЕРИОД</h1>
+		<p class="why__text">и стали крупнейшим в России производителем винтовых свай</p>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="why-inner">
+							<h1 class="why-inner__head">Универсальность</h1>
+							<p class="why-inner__text">Строим там, где строить, казалось бы, невозможно. Ландшафт и грунт значения не имеют. Овраг, болото, дно водоёма, вечная мерзлота, зыбучие пески – винтовые сваи устанавливаются легко и быстро</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="why-inner">
+							<h1 class="why-inner__head">оперативность</h1>
+							<p class="why-inner__text">Монтаж фундамента под стандартный дом 6 на 6 метров занимает у бригады «СваиНова» 4-5 часов. Оперативно? Молниеносно!</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="why-inner">
+							<h1 class="why-inner__head">100% экологичность</h1>
+							<p class="why-inner__text">Винтовые сваи становятся частью природы, гармонично вливаясь в окружающую среду и не нанося ни малейшего вреда последней. «Green Peas» одобряет!</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="why-inner">
+							<h1 class="why-inner__head">Отсутствие земляных работ</h1>
+							<p class="why-inner__text">Никакой предварительной (и дорогостоящей) подготовки грунта не требуется. Расчищаем площадку и ждём монтажную бригаду!</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="why-inner">
+							<h1 class="why-inner__head">Установка в любое время года</h1>
+							<p class="why-inner__text">Под отдельные объекты (пирсы, например), даже предпочтительнее монтировать фундамент зимой,
+								а не летом.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="why-inner">
+							<h1 class="why-inner__head">Бесконечный запас прочности</h1>
+							<p class="why-inner__text">Винтовая свая диаметром 108 миллиметров выдерживает от 5 до 17 тонн нагрузки, а если нужно больше – просто берём сваю другого калибра, - 133 мм, 159 и так далее.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="red-line"></div>
+	<div class="consultation">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 get-consultation">
+						<h1 class="get-consultation__head">Получите бесплатную консультацию</h1>
+						<div class="get-consultation__img">
+							<span class="get-consultation__text hidden-xs">На консультации вы:</span>
+							<ul class="about-consultation">
+								<li class="about-consultation__list">Сможете задать интересующие вопросы нашему специалисту</li>
+								<li class="about-consultation__list">Получите помощь в выборе необходимых конструкций</li>
+								<li class="about-consultation__list">Узнаете предварительную стоимость своего заказа</li>
+							</ul>
+							<p class="get-consultation__hint">Прикрепите к заявке эскиз, визуализацию или фотографию понравившегося объекта и мы предоставим Вам детальный расчет стоимости и сроков постройки фундамента.</p>
+						</div>
+					</div>
+					<div class="clearfix visible-xs"></div>
+					<hr class="visible-xs">
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 submit-application">
+						<form action="" class="main-form">
+							<h1 class="submit-application__head">оставить заявку</h1>
+							<p class="submit-application__text">Наш менеджер свяжется с вами
+								в течении 15 минут</p>
+							<input type="text" placeholder="Ваше имя" class="submit-application__input">
+							<input type="text" placeholder="Ваш телефон" class="submit-application__input">
+							<button class="submit-btn">оставить заявку</button>
+							<span class="attach-file-text">Прикрепить файл</span>
+							<button class="btn-add"></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="about-svai">
+		<h1 class="about-svai__head">Почему вам точно подойдут винтовые сваи</h1>
+		<div class="svai-iterm svai-iterm_first">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<h1 class="svai-iterm__head">Прочность</h1>
+						<h2 class="svai-iterm__text">бесконечный запас прочности</h2>
+						<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+						<div class="about-list">
+							<div class="col-lg-7 col-md-7 col-sm-12">
+								<img src="img/item-house.png" alt="">
+							</div>
+							<div class="col-lg-5 col-md-5 col-sm-12">
+								<div class="about-list_pad">
+									<h1 class="about-list__head">Фундаменты</h1>
+									<p class="about-list__text">Винтовые сваи – идеальный фундамент для всех видов домов, - газобетонных, брусовых, каркасных, щитовых, кирпичных. Свайное основание исключительно выгодное вложение денег, и конкурентов у винтовых свай не существует. Другие виды фундаментов очень дороги, требуют большого количества земляных работ и трудочасов.</p>
+									<a href="" class="btn-more transition">Подробнее</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="svai-iterm svai-iterm_second">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<h1 class="svai-iterm__head">долговечность</h1>
+						<h2 class="svai-iterm__text">установка на любой местности</h2>
+						<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+						<div class="about-list">
+							<div class="col-lg-7 col-md-7 col-sm-12">
+								<img src="img/item-house-sec.png" alt="">
+							</div>
+							<div class="col-lg-5 col-md-5 col-sm-12">
+								<div class="about-list_pad">
+									<h1 class="about-list__head">пирсы</h1>
+									<p class="about-list__text">Сейчас необходимость в деревянных сваях отпала, поскольку инженеры нашли отличную замену – винтовые сваи. Металлические опоры изготавливаются из стали, покрываются полимерным покрытием, что гарантирует надёжную защиту от коррозии.</p>
+									<a href="" class="btn-more transition">Подробнее</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="svai-iterm svai-iterm_third">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<h1 class="svai-iterm__head">уникальность</h1>
+						<h2 class="svai-iterm__text">уникальная технология</h2>
+						<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+						<div class="about-list">
+							<div class="col-lg-7 col-md-7 col-sm-12">
+								<img src="img/item-house-third.png" alt="">
+							</div>
+							<div class="col-lg-5 col-md-5 col-sm-12">
+								<div class="about-list_pad">
+									<h1 class="about-list__head">заборы</h1>
+									<p class="about-list__text">Сейчас в нашей стране приобрёл популярность так называемый 3D-забор, который представляет собой лёгкую и красивую конструкцию, выполненную из специальной сетки, которая, для продления срока службы, покрывается цинково-полимерным покрытием.</p>
+									<a href="" class="btn-more transition">Подробнее</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="red-line"></div>
+	<div class="consultation">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7  col-md-7 col-sm-7 col-xs-12 get-consultation">
+						<h1 class="get-consultation__head">Заказать просчет стоимости фундамента</h1>
+						<div class="get-consultation__img">
+							<span class="get-consultation__text hidden-xs">На консультации вы:</span>
+							<ul class="about-consultation">
+								<li class="about-consultation__list">Сможете задать интересующие вопросы нашему специалисту</li>
+								<li class="about-consultation__list">Получите помощь в выборе необходимых конструкций</li>
+								<li class="about-consultation__list">Узнаете предварительную стоимость своего заказа</li>
+							</ul>
+							<p class="get-consultation__hint">Прикрепите к заявке эскиз, визуализацию или фотографию понравившегося объекта и мы предоставим Вам детальный расчет стоимости и сроков постройки фундамента.</p>
+						</div>
+					</div>
+					<div class="clearfix visible-xs"></div>
+					<hr class="visible-xs">
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 submit-application">
+						<form action="" class="main-form">
+							<h1 class="submit-application__head">оставить заявку</h1>
+							<p class="submit-application__text">Наш менеджер свяжется с вами
+								в течении 15 минут</p>
+							<input type="text" placeholder="Ваше имя" class="submit-application__input">
+							<input type="text" placeholder="Ваш телефон" class="submit-application__input">
+							<button class="submit-btn">оставить заявку</button>
+							<span class="attach-file-text">Прикрепить файл</span>
+							<button class="btn-add"></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="our-clients">
+		<h1 class="our-clients__head">наши постоянные клиенты</h1>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="our-clients__slider">
+						<div>
+							<img src="img/logo1.png" alt="">
+						</div>
+						<div>
+							<img src="img/logo2.png" alt="">
+						</div>
+						<div>
+							<img src="img/logo3.png" alt="">
+						</div>
+						<div>
+							<img src="img/logo4.png" alt="">
+						</div>
+						<div>
+							<img src="img/logo1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="our-recent">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="our-recent__speaker col-lg-8">
+						<div>
+							<h1 class="our-recent__speaker__head">Вишнеская Людмила</h1>
+							<span class="our-recent__speaker__who">Директор, "Rozzetti"</span>
+							<p class="citata"><i class="fa fa-quote-right" aria-hidden="true"></i> С компанией Сваи нова работаю уже более 5 лет . За это время у меня нет ни одного нарекания на работу. Всегда выполняются сроки поставки, оговоренные заранее. Качеством  довольна.
+								Очень рада с Вами работать. Спасибо</p>
+						</div>
+					</div>
+					<div class="about-clients">
+						<ul class="col-lg-4">
+							<li>Наш клиент с  <span>2010</span>  года</li>
+							<li>Построено <span>23</span> свайных фундамента</li>
+						</ul>
+						<div class="col-lg-4">
+							<a href="" class="btn-more">познакомиться с проектами</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="partners-programm">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-5 col-sm-6 pull-right">
+						<h1 class="partners-programm__head">партнерская программа</h1>
+						<p class="partners-programm__text">Компания «СваиНова» — ведущий производитель свайно-винтовых фундаментов в России и странах Таможенного союза — объявляет о запуске программы «ПАРТНЁР». Мы предлагаем взаимовыгодное сотрудничество, основанное на долговременных партнёрских отношениях. Совместный бизнес с компанией «СваиНова» позволит вам реализовать собственные цели в строительной отрасли и упрочить уже достигнутый успех.</p>
+						<button class="partners-programm__btn">Стать партнером</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="certificates-and-awards">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<h1 class="certificates-and-awards__head">Сертификаты и награды</h1>
+					<p class="certificates-and-awards__text">За качеством каждой сваи строго следят не только специалисты технического контроля, но и умная аппаратура, отбраковывающая изделие даже в случае малейшего дефекта. Но такое случается крайне редко, так как производственные линии компании оснащены исключительно суперсовременным оборудованием. Винтовые сваи «СваиНова» остаются своеобразным эталоном на рынке, наша продукция успешно прошла сертификацию по всем отечественным и европейским стандартам.</p>
+					<div class="img-slider ">
+						<img src="img/certificates-img.png" alt="">
+						<img src="img/certificates-img.png" alt="">
+						<img src="img/certificates-img.png" alt="">
+						<img src="img/certificates-img.png" alt="">
+						<img src="img/certificates-img.png" alt="">
+						<img src="img/certificates-img.png" alt="">
+						<img src="img/certificates-img.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix clearfix_marg"></div>
+</main>
+<footer>
+	<div class="container-fluid">
+		<div class="container">
+			<!--FOR DESKTOP-->
+			<div class="row hidden-xs">
+				<ul class="footer-nav ">
+					<li class="footer-nav__item-first">Наша продукция</li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Фундаменты</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Пирсы</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Заборы</a></li>
+				</ul>
+				<ul class="footer-nav">
+					<li class="footer-nav__item-first">Партнёрам</li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Корпоративным клиентам</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Программа “Партнёр”</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Калькулятор стоимости</a></li>
+				</ul>
+				<ul class="footer-nav">
+					<li class="footer-nav__item-first">Гарантии качества</li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Сертификаты и награды</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Качество сырья</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Отдел контроля качества</a></li>
+				</ul>
+				<ul class="footer-nav">
+					<li class="footer-nav__item-first">Информация</li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Акции и скидки</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+				</ul>
+				<ul class="footer-nav contacts-info">
+					<li class="footer-nav__item-first">Контактные данные</li>
+					<li class="contacts-info__phone contacts-info__phone_icon">+7 812 643-21-71</li>
+					<li class="contacts-info__phone">8 800 500-11-32</li>
+					<li class="contacts-info__work">с 9:00 до 21:00 без выходных</li>
+				</ul>
+			</div>
+			<!--FOR DESKTOP END-->
+			<!--FOR MOBILE NAVIGATION-->
+			<div class="row visible-xs">
+				<ul class="footer-nav-mobile">
+					<li class="footer-nav-mobile__item footer-nav-mobile__item-first"><a href="#" class="footer-nav-mobile__link">Наша продукция<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Корпоративным клиентам</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Программа “Партнёр”</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Калькулятор стоимости</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Сертификаты и награды</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Качество сырья</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Отдел контроля качества</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Новости</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">Акции и скидки</a></li>
+					<li class="footer-nav-mobile__item"><a href="#" class="footer-nav-mobile__link">отзывы</a></li>
+				</ul>
+				<ul class="footer-nav footer-nav-mobile contacts-info">
+					<li class="footer-nav__item-first">Контактные данные</li>
+					<li class="contacts-info__phone contacts-info__phone_icon">+7 812 643-21-71</li>
+					<li class="contacts-info__phone">8 800 500-11-32</li>
+					<li class="contacts-info__work">с 9:00 до 21:00 без выходных</li>
+				</ul>
+			</div>
+			<!--FOR MOBILE NAVIGATION END-->
+		</div>
+	</div>
+</footer>
+<!--<script src="js/maps.js"></script>-->
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://use.fontawesome.com/90bbf0575b.js"></script>
+</body>
+</html>
